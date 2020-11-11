@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5CBD2E1255C659A0003C0D2 /* Runner Bean WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D5CBD2E0255C659A0003C0D2 /* Runner Bean WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5CBD2E6255C659D0003C0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CBD2E5255C659D0003C0D2 /* Assets.xcassets */; };
+		D5CBD2ED255C659E0003C0D2 /* Runner Bean WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5CBD2EC255C659E0003C0D2 /* Runner Bean WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5CBD2F2255C659E0003C0D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD2F1255C659E0003C0D2 /* ContentView.swift */; };
+		D5CBD2F4255C659E0003C0D2 /* Runner_BeanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD2F3255C659E0003C0D2 /* Runner_BeanApp.swift */; };
+		D5CBD2F6255C659E0003C0D2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD2F5255C659E0003C0D2 /* ComplicationController.swift */; };
+		D5CBD2F8255C659F0003C0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CBD2F7255C659F0003C0D2 /* Assets.xcassets */; };
+		D5CBD2FB255C659F0003C0D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CBD2FA255C659F0003C0D2 /* Preview Assets.xcassets */; };
+		D5CBD310255C65CB0003C0D2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CBD30F255C65CB0003C0D2 /* HealthKit.framework */; };
+		D5CBD315255C674D0003C0D2 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD314255C674D0003C0D2 /* HealthManager.swift */; };
+		D5CBD31A255C6EA10003C0D2 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD319255C6EA10003C0D2 /* WorkoutView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5CBD2E2255C659A0003C0D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5CBD2D6255C659A0003C0D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5CBD2DF255C659A0003C0D2;
+			remoteInfo = "Runner Bean WatchKit App";
+		};
+		D5CBD2EE255C659E0003C0D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5CBD2D6255C659A0003C0D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5CBD2EB255C659E0003C0D2;
+			remoteInfo = "Runner Bean WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5CBD302255C659F0003C0D2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5CBD2ED255C659E0003C0D2 /* Runner Bean WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CBD306255C659F0003C0D2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D5CBD2E1255C659A0003C0D2 /* Runner Bean WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D5CBD2DC255C659A0003C0D2 /* Runner Bean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runner Bean.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CBD2E0255C659A0003C0D2 /* Runner Bean WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runner Bean WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CBD2E5255C659D0003C0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5CBD2E7255C659D0003C0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CBD2EC255C659E0003C0D2 /* Runner Bean WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Runner Bean WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CBD2F1255C659E0003C0D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5CBD2F3255C659E0003C0D2 /* Runner_BeanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner_BeanApp.swift; sourceTree = "<group>"; };
+		D5CBD2F5255C659E0003C0D2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D5CBD2F7255C659F0003C0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5CBD2FA255C659F0003C0D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5CBD2FC255C659F0003C0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CBD30D255C65CB0003C0D2 /* Runner Bean WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Runner Bean WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D5CBD30F255C65CB0003C0D2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		D5CBD314255C674D0003C0D2 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		D5CBD319255C6EA10003C0D2 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5CBD2E9255C659E0003C0D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CBD310255C65CB0003C0D2 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5CBD2D5255C659A0003C0D2 = {
+			isa = PBXGroup;
+			children = (
+				D5CBD2E4255C659A0003C0D2 /* Runner Bean WatchKit App */,
+				D5CBD2F0255C659E0003C0D2 /* Runner Bean WatchKit Extension */,
+				D5CBD2DD255C659A0003C0D2 /* Products */,
+				D5CBD30E255C65CB0003C0D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5CBD2DD255C659A0003C0D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBD2DC255C659A0003C0D2 /* Runner Bean.app */,
+				D5CBD2E0255C659A0003C0D2 /* Runner Bean WatchKit App.app */,
+				D5CBD2EC255C659E0003C0D2 /* Runner Bean WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5CBD2E4255C659A0003C0D2 /* Runner Bean WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBD2E5255C659D0003C0D2 /* Assets.xcassets */,
+				D5CBD2E7255C659D0003C0D2 /* Info.plist */,
+			);
+			path = "Runner Bean WatchKit App";
+			sourceTree = "<group>";
+		};
+		D5CBD2F0255C659E0003C0D2 /* Runner Bean WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBD30D255C65CB0003C0D2 /* Runner Bean WatchKit Extension.entitlements */,
+				D5CBD2F1255C659E0003C0D2 /* ContentView.swift */,
+				D5CBD319255C6EA10003C0D2 /* WorkoutView.swift */,
+				D5CBD314255C674D0003C0D2 /* HealthManager.swift */,
+				D5CBD2F3255C659E0003C0D2 /* Runner_BeanApp.swift */,
+				D5CBD2F5255C659E0003C0D2 /* ComplicationController.swift */,
+				D5CBD2F7255C659F0003C0D2 /* Assets.xcassets */,
+				D5CBD2FC255C659F0003C0D2 /* Info.plist */,
+				D5CBD2F9255C659F0003C0D2 /* Preview Content */,
+			);
+			path = "Runner Bean WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D5CBD2F9255C659F0003C0D2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBD2FA255C659F0003C0D2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5CBD30E255C65CB0003C0D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBD30F255C65CB0003C0D2 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5CBD2DB255C659A0003C0D2 /* Runner Bean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5CBD307255C659F0003C0D2 /* Build configuration list for PBXNativeTarget "Runner Bean" */;
+			buildPhases = (
+				D5CBD2DA255C659A0003C0D2 /* Resources */,
+				D5CBD306255C659F0003C0D2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5CBD2E3255C659A0003C0D2 /* PBXTargetDependency */,
+			);
+			name = "Runner Bean";
+			productName = "Runner Bean";
+			productReference = D5CBD2DC255C659A0003C0D2 /* Runner Bean.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D5CBD2DF255C659A0003C0D2 /* Runner Bean WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5CBD303255C659F0003C0D2 /* Build configuration list for PBXNativeTarget "Runner Bean WatchKit App" */;
+			buildPhases = (
+				D5CBD2DE255C659A0003C0D2 /* Resources */,
+				D5CBD302255C659F0003C0D2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5CBD2EF255C659E0003C0D2 /* PBXTargetDependency */,
+			);
+			name = "Runner Bean WatchKit App";
+			productName = "Runner Bean WatchKit App";
+			productReference = D5CBD2E0255C659A0003C0D2 /* Runner Bean WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D5CBD2EB255C659E0003C0D2 /* Runner Bean WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5CBD2FF255C659F0003C0D2 /* Build configuration list for PBXNativeTarget "Runner Bean WatchKit Extension" */;
+			buildPhases = (
+				D5CBD2E8255C659E0003C0D2 /* Sources */,
+				D5CBD2E9255C659E0003C0D2 /* Frameworks */,
+				D5CBD2EA255C659E0003C0D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Runner Bean WatchKit Extension";
+			productName = "Runner Bean WatchKit Extension";
+			productReference = D5CBD2EC255C659E0003C0D2 /* Runner Bean WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5CBD2D6255C659A0003C0D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					D5CBD2DB255C659A0003C0D2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D5CBD2DF255C659A0003C0D2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D5CBD2EB255C659E0003C0D2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = D5CBD2D9255C659A0003C0D2 /* Build configuration list for PBXProject "Runner Bean" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5CBD2D5255C659A0003C0D2;
+			productRefGroup = D5CBD2DD255C659A0003C0D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5CBD2DB255C659A0003C0D2 /* Runner Bean */,
+				D5CBD2DF255C659A0003C0D2 /* Runner Bean WatchKit App */,
+				D5CBD2EB255C659E0003C0D2 /* Runner Bean WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5CBD2DA255C659A0003C0D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CBD2DE255C659A0003C0D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CBD2E6255C659D0003C0D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CBD2EA255C659E0003C0D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CBD2FB255C659F0003C0D2 /* Preview Assets.xcassets in Resources */,
+				D5CBD2F8255C659F0003C0D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5CBD2E8255C659E0003C0D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CBD2F2255C659E0003C0D2 /* ContentView.swift in Sources */,
+				D5CBD2F4255C659E0003C0D2 /* Runner_BeanApp.swift in Sources */,
+				D5CBD2F6255C659E0003C0D2 /* ComplicationController.swift in Sources */,
+				D5CBD315255C674D0003C0D2 /* HealthManager.swift in Sources */,
+				D5CBD31A255C6EA10003C0D2 /* WorkoutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5CBD2E3255C659A0003C0D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5CBD2DF255C659A0003C0D2 /* Runner Bean WatchKit App */;
+			targetProxy = D5CBD2E2255C659A0003C0D2 /* PBXContainerItemProxy */;
+		};
+		D5CBD2EF255C659E0003C0D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5CBD2EB255C659E0003C0D2 /* Runner Bean WatchKit Extension */;
+			targetProxy = D5CBD2EE255C659E0003C0D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D5CBD2FD255C659F0003C0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5CBD2FE255C659F0003C0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5CBD300255C659F0003C0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Runner Bean WatchKit Extension/Runner Bean WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Runner Bean WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 62PFSNGVZ6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Runner Bean WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sparrowbyte.Runner-Bean.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		D5CBD301255C659F0003C0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Runner Bean WatchKit Extension/Runner Bean WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Runner Bean WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 62PFSNGVZ6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Runner Bean WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sparrowbyte.Runner-Bean.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		D5CBD304255C659F0003C0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62PFSNGVZ6;
+				IBSC_MODULE = Runner_Bean_WatchKit_Extension;
+				INFOPLIST_FILE = "Runner Bean WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sparrowbyte.Runner-Bean.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		D5CBD305255C659F0003C0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62PFSNGVZ6;
+				IBSC_MODULE = Runner_Bean_WatchKit_Extension;
+				INFOPLIST_FILE = "Runner Bean WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sparrowbyte.Runner-Bean.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		D5CBD308255C659F0003C0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62PFSNGVZ6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sparrowbyte.Runner-Bean";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D5CBD309255C659F0003C0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62PFSNGVZ6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sparrowbyte.Runner-Bean";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5CBD2D9255C659A0003C0D2 /* Build configuration list for PBXProject "Runner Bean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CBD2FD255C659F0003C0D2 /* Debug */,
+				D5CBD2FE255C659F0003C0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5CBD2FF255C659F0003C0D2 /* Build configuration list for PBXNativeTarget "Runner Bean WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CBD300255C659F0003C0D2 /* Debug */,
+				D5CBD301255C659F0003C0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5CBD303255C659F0003C0D2 /* Build configuration list for PBXNativeTarget "Runner Bean WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CBD304255C659F0003C0D2 /* Debug */,
+				D5CBD305255C659F0003C0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5CBD307255C659F0003C0D2 /* Build configuration list for PBXNativeTarget "Runner Bean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CBD308255C659F0003C0D2 /* Debug */,
+				D5CBD309255C659F0003C0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5CBD2D6255C659A0003C0D2 /* Project object */;
+}
